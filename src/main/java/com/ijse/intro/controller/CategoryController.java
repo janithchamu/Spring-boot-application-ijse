@@ -30,7 +30,7 @@ public class CategoryController {
 
     @PostMapping("/Categories")
     public ResponseEntity<Category> creaCategory(@RequestBody Category category){
-        return ResponseEntity.status(201).body(categoryService.createCategory(category));
+        return ResponseEntity.status(201).body(categoryService.createCategory(category));  // new one
     }
 
     @GetMapping("/Categories")
